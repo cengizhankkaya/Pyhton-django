@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cengiz Han</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/foto.jpg' %}" >
+					<hr>
+					<h4>Merhaba Ben Cengiz Han!</h4>
+					<p>Kod Yazamyı Araştırma Yapmayı Seviyorum</p>
+				</div>
+			</div>
+
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info">
+					<h4>Benim Hikayem</h4>
+					<hr>
+					<p>Merhaba! Ben Cengizhan. 22 yaşında, Nevşehir Hacı Bektaş Veli Üniversitesi Bilgisayar Mühendisliği 2. sınıf öğrencisiyim. Hayatta en çok sevdiğim şeylerden biri kitap okumak ve araştırma yapmak. Bu yazıda, sizlere benimle ilgili biraz daha yakından tanışma fırsatı vermek istiyorum. </p>
+
+					<p>Kitapların Büyülü Dünyasına Yolculuk</p>
+
+					<p>Kitaplar benim için sadece kelimelerin bir araya getirilmesiyle oluşturulan kağıtlardan ibaret değil, aynı zamanda büyülü bir dünyanın anahtarıdır. Bir kitabın sayfaları arasında kaybolmak, farklı karakterlerle tanışmak ve onların maceralarına ortak olmak beni sonsuz bir heyecana sürükler. Kurgu, bilimkurgu, tarih veya psikoloji gibi farklı türlerdeki kitaplarla ruhumu besler, düşüncelerimi genişletir ve perspektifimi zenginleştiririm.</p>
+
+					<ul class="social-links">
+                        <li>
+                            <a href="https://www.instagram.com/cengizhankkaya/?hl=tr" target="_blank">
+                                <img class="social" src="{% static 'images/instagram.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/cengizhan-kaya-aaab0a187/" target="_blank">
+                                <img class="social" src="{% static 'images/linkedin.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/cengizkya" target="_blank">
+                                <img class="social" src="{% static 'images/twitter.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC8reqzg1aACFCxd3yEthszQ" target="_blank">
+                                <img class="social" src="{% static 'images/youtube.png' %}">
+                            </a>
+                        </li>
+                    </ul>
+                    
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Bilginin İzinde Araştırma Yapmak</h5>
+					<hr>
+					<p>Bilgisayar mühendisliği okuyan bir öğrenci olarak, teknoloji ve bilişim dünyasındaki yenilikler ve gelişmeler benim için büyük bir ilgi kaynağıdır. Araştırma yapmak, yeni teknolojilerin nasıl çalıştığını, gelecekteki trendleri ve sektördeki yenilikleri keşfetmek için önemli bir araçtır. İnternetin sunduğu kaynaklar ve kütüphanelerdeki kitaplar sayesinde saatlerce araştırma yaparım. Bilginin peşinden gitmek, beni heyecanlandırır ve kariyerimde öne çıkmamı sağlar.</p>
+					</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Bilgi Paylaşma ve Öğretme İsteği</h5>
+					<hr>
+					<p>Bilgiyi sadece kendime saklamak yerine, başkalarıyla paylaşmayı ve öğretmeyi seviyorum. Sınıf arkadaşlarıma, öğrendiğim konuları anlatmak ve onların da gelişimine katkıda bulunmak benim için önemlidir. Bir konuyu anlatırken, hem kendimi daha iyi anlamamı sağlar hem de başkalarının da konuyu kavramalarına yardımcı olur. Bilgi paylaştıkça çoğalır ve toplumun genel olarak daha bilgili hale gelmesine katkıda bulunuruz.</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Hesap Makinesi</h5>
+					<hr>
+					<form name="calculator">
+						<input type="text" name="result" readonly>
+						<br>
+						<input type="button" value="1" onclick="calculator.result.value += '1'">
+						<input type="button" value="2" onclick="calculator.result.value += '2'">
+						<input type="button" value="3" onclick="calculator.result.value += '3'">
+						<input type="button" value="+" onclick="calculator.result.value += '+'">
+						<br>
+						<input type="button" value="4" onclick="calculator.result.value += '4'">
+						<input type="button" value="5" onclick="calculator.result.value += '5'">
+						<input type="button" value="6" onclick="calculator.result.value += '6'">
+						<input type="button" value="-" onclick="calculator.result.value += '-'">
+						<br>
+						<input type="button" value="7" onclick="calculator.result.value += '7'">
+						<input type="button" value="8" onclick="calculator.result.value += '8'">
+						<input type="button" value="9" onclick="calculator.result.value += '9'">
+						<input type="button" value="*" onclick="calculator.result.value += '*'">
+						<br>
+						<input type="button" value="0" onclick="calculator.result.value += '0'">
+						<input type="button" value="." onclick="calculator.result.value += '.'">
+						<input type="button" value="=" onclick="calculator.result.value = eval(calculator.result.value)">
+						<input type="button" value="/" onclick="calculator.result.value += '/'">
+						<br>
+						<input type="button" value="Clear" onclick="calculator.result.value = ''">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Bildiğim ve İlgi Duyduğum Yazılım Dilleri</h5>
+				<hr>
+				<p>Python,html,C,C#,MySQL, gibi dilleri farklı seviyelerde biliyorum.</p>
+				<p>Bu site için Python programlama dilini ve Python'un Django, Flask, Pandas, Matplotlib gibi kütüphanelerini kullanarak geliştirmekteyim. Bu kütüphaneler, web uygulamasının altyapısını oluşturmak, verileri işlemek ve analiz etmek, grafikler oluşturmak gibi çeşitli işlevleri yerine getirmek için kullanılmaktadır.</p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
+</body>
+</html>
